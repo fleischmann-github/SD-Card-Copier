@@ -14,7 +14,7 @@ from colorama import Fore
 def copy_canon_photos():
 	source = str(dcim_path)
 	dest = str(photo_archive_path / canon_folder_name)
-	logfile_name = canon_folder_name + "_RSYNC.log"
+	logfile_name = canon_folder_name + ".log"
 	logfile_path = photo_archive_path / logfile_name
 	copy_count_str = '0'
 	output_list = []
@@ -46,7 +46,7 @@ def copy_canon_photos():
 def copy_nikon_photos():
 	src = dcim_path
 	dest = photo_archive_path / nikon_folder_name
-	logfile_name = nikon_folder_name + "_CUSTOMSYNC.log"
+	logfile_name = nikon_folder_name + ".log"
 	logfile_path = photo_archive_path / logfile_name
 	stdout_list = []
 	copy_count = 0
